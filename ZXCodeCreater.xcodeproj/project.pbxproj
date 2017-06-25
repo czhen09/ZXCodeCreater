@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0157401EFFA4E600D3AC5F /* FileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB01573F1EFFA4E600D3AC5F /* FileHandle.m */; };
+		FBBCBC421EFD44D30009C244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBCBC411EFD44D30009C244 /* AppDelegate.m */; };
+		FBBCBC451EFD44D30009C244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBCBC441EFD44D30009C244 /* main.m */; };
+		FBBCBC481EFD44D30009C244 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBCBC471EFD44D30009C244 /* ViewController.m */; };
+		FBBCBC4A1EFD44D30009C244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBCBC491EFD44D30009C244 /* Assets.xcassets */; };
+		FBBCBC4D1EFD44D30009C244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBCBC4B1EFD44D30009C244 /* Main.storyboard */; };
+		FBBCBC571EFD49C00009C244 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBCBC561EFD49C00009C244 /* FileManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB01573E1EFFA4E600D3AC5F /* FileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandle.h; sourceTree = "<group>"; };
+		FB01573F1EFFA4E600D3AC5F /* FileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandle.m; sourceTree = "<group>"; };
+		FBBCBC3D1EFD44D30009C244 /* ZXCodeCreater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXCodeCreater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBCBC401EFD44D30009C244 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBBCBC411EFD44D30009C244 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBBCBC441EFD44D30009C244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBBCBC461EFD44D30009C244 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBBCBC471EFD44D30009C244 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBBCBC491EFD44D30009C244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBCBC4C1EFD44D30009C244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBBCBC4E1EFD44D30009C244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBCBC551EFD49C00009C244 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		FBBCBC561EFD49C00009C244 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBBCBC3A1EFD44D30009C244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBBCBC341EFD44D30009C244 = {
+			isa = PBXGroup;
+			children = (
+				FBBCBC3F1EFD44D30009C244 /* ZXCodeCreater */,
+				FBBCBC3E1EFD44D30009C244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBBCBC3E1EFD44D30009C244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBBCBC3D1EFD44D30009C244 /* ZXCodeCreater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBBCBC3F1EFD44D30009C244 /* ZXCodeCreater */ = {
+			isa = PBXGroup;
+			children = (
+				FBBCBC541EFD49C00009C244 /* Ulits */,
+				FBBCBC401EFD44D30009C244 /* AppDelegate.h */,
+				FBBCBC411EFD44D30009C244 /* AppDelegate.m */,
+				FBBCBC461EFD44D30009C244 /* ViewController.h */,
+				FBBCBC471EFD44D30009C244 /* ViewController.m */,
+				FBBCBC491EFD44D30009C244 /* Assets.xcassets */,
+				FBBCBC4B1EFD44D30009C244 /* Main.storyboard */,
+				FBBCBC4E1EFD44D30009C244 /* Info.plist */,
+				FBBCBC431EFD44D30009C244 /* Supporting Files */,
+			);
+			path = ZXCodeCreater;
+			sourceTree = "<group>";
+		};
+		FBBCBC431EFD44D30009C244 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBBCBC441EFD44D30009C244 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBBCBC541EFD49C00009C244 /* Ulits */ = {
+			isa = PBXGroup;
+			children = (
+				FBBCBC551EFD49C00009C244 /* FileManager.h */,
+				FBBCBC561EFD49C00009C244 /* FileManager.m */,
+				FB01573E1EFFA4E600D3AC5F /* FileHandle.h */,
+				FB01573F1EFFA4E600D3AC5F /* FileHandle.m */,
+			);
+			path = Ulits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBBCBC3C1EFD44D30009C244 /* ZXCodeCreater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBCBC511EFD44D30009C244 /* Build configuration list for PBXNativeTarget "ZXCodeCreater" */;
+			buildPhases = (
+				FBBCBC391EFD44D30009C244 /* Sources */,
+				FBBCBC3A1EFD44D30009C244 /* Frameworks */,
+				FBBCBC3B1EFD44D30009C244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXCodeCreater;
+			productName = ZXCodeCreater;
+			productReference = FBBCBC3D1EFD44D30009C244 /* ZXCodeCreater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBBCBC351EFD44D30009C244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zx;
+				TargetAttributes = {
+					FBBCBC3C1EFD44D30009C244 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FBBCBC381EFD44D30009C244 /* Build configuration list for PBXProject "ZXCodeCreater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBBCBC341EFD44D30009C244;
+			productRefGroup = FBBCBC3E1EFD44D30009C244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBBCBC3C1EFD44D30009C244 /* ZXCodeCreater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBBCBC3B1EFD44D30009C244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBCBC4A1EFD44D30009C244 /* Assets.xcassets in Resources */,
+				FBBCBC4D1EFD44D30009C244 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBBCBC391EFD44D30009C244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBCBC481EFD44D30009C244 /* ViewController.m in Sources */,
+				FB0157401EFFA4E600D3AC5F /* FileHandle.m in Sources */,
+				FBBCBC451EFD44D30009C244 /* main.m in Sources */,
+				FBBCBC421EFD44D30009C244 /* AppDelegate.m in Sources */,
+				FBBCBC571EFD49C00009C244 /* FileManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBBCBC4B1EFD44D30009C244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBCBC4C1EFD44D30009C244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBBCBC4F1EFD44D30009C244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBBCBC501EFD44D30009C244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBBCBC521EFD44D30009C244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ZXCodeCreater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhengxu.ZXCodeCreater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBBCBC531EFD44D30009C244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ZXCodeCreater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhengxu.ZXCodeCreater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBBCBC381EFD44D30009C244 /* Build configuration list for PBXProject "ZXCodeCreater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBCBC4F1EFD44D30009C244 /* Debug */,
+				FBBCBC501EFD44D30009C244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBCBC511EFD44D30009C244 /* Build configuration list for PBXNativeTarget "ZXCodeCreater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBCBC521EFD44D30009C244 /* Debug */,
+				FBBCBC531EFD44D30009C244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBBCBC351EFD44D30009C244 /* Project object */;
+}
