@@ -23,11 +23,13 @@
 
 
 ##一图概全    
-![image](https://github.com/czhen09/ZXCodeCreater/tree/master/ZXCodeCreater/Resource/IntroductionDiagram.png)     
+![image](https://github.com/czhen09/ZXCodeCreater/blob/master/ZXCodeCreater/Resource/IntroductionDiagram.png)     
 
 
 ##结语    
-1. 使用之前，你们得为自己准备一份通用模板；
+1. 使用之前，你们得为自己准备一份通用模板；  
+   如果暂时没有，可以通过文件目录下的ZXCodeCreaterTestModule文件夹进行测试；  
+2. dmg软件包在Application目录下；
 2. 让CodeCreater去接受你们的考验吧！    
 3. 使用愉快！  
 4. [简书](http://www.jianshu.com/p/55c0b79b20d5)
