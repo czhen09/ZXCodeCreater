@@ -42,43 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZXCodeCreater/ViewController.m"
-            timestampString = "520091533.82132"
+            timestampString = "520163888.509538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-creatFolderAndFileAtModuleFilePath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZXCodeCreater/ViewController.m"
-            timestampString = "520091533.82132"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "-creatFolderAndFileAtModuleFilePath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZXCodeCreater/ViewController.m"
-            timestampString = "520091555.321468"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "-firstCreateBtnAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZXCodeCreater/ViewController.m"
-            timestampString = "520091558.361684"
+            timestampString = "520163888.509538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "-firstCreateBtnAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZXCodeCreater/Ulits/FileManager.m"
+            timestampString = "520159474.645428"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-getFilePathArrWithPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

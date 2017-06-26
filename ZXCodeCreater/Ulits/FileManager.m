@@ -81,11 +81,7 @@
 }
 
 
-- (NSString *)getDateStr{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"yy/MM/dd";
-    return [formatter stringFromDate:[NSDate date]];
-}
+
 
 - (NSFileManager *)fileManager
 {

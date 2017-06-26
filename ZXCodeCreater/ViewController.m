@@ -24,16 +24,14 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
 @property (weak) IBOutlet NSTextField *firstModuleTxf;
 @property (weak) IBOutlet NSTextField *firstReplacedTxf;
 
-
 @property (unsafe_unretained) IBOutlet NSTextView *secondModulePathTxv;
 @property (weak) IBOutlet NSTextField *secondModuleTxf;
 @property (weak) IBOutlet NSTextField *secondReplacedTxf;
 
 
-
-
 @property (nonatomic,copy) NSString *firstFolderPathString;
 @property (nonatomic,copy) NSString *secondFolderPathString;
+
 @property (nonatomic,copy) NSString *moduleClassPrefix;
 @property (nonatomic,copy) NSString *targetClassPrefix;
 
@@ -45,10 +43,8 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initData];
-    
 
 }
-
 
 - (void)initData
 {
@@ -87,7 +83,7 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
 }
 - (IBAction)firstCreateBtnAction:(id)sender {
     
-    
+    self.firstFolderPathString = self.firstModulePathTxv.string;
     if (!self.firstModulePathTxv.string||[self.firstModulePathTxv.string isEqualToString:@""]) {
         
         [self showAlertWithMessage:@"Please select first module filePath "];
@@ -119,6 +115,10 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
 }
 
 - (IBAction)secondCreateOpenBtnAction:(id)sender {
+    
+    
+    self.secondFolderPathString = self.secondModulePathTxv.string;
+    
     if (!self.secondModulePathTxv.string||[self.secondModulePathTxv.string isEqualToString:@""]) {
         
         [self showAlertWithMessage:@"Please select second module filePath "];
@@ -183,18 +183,50 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
             continue;
         }
         //文件夹路径;如果是文件夹的话，就创建文件夹
-        if (![subPath containsString:@"/"]) {
+        if (!([subPath containsString:@".h"]||[subPath containsString:@".m"])) {
         
             [[FileManager sharedInstance] createFolderAtPath:newWholePath];
             continue;
         }
         NSString *str =  [[FileManager sharedInstance] getStringWithContentsOfFilePath:wholePath];
         NSString *replacedStr = [str stringByReplacingOccurrencesOfString:self.moduleClassPrefix withString:self.targetClassPrefix];
-        [[FileManager sharedInstance] createFileAtPath:newWholePath content:replacedStr];
+        NSString *stringAfterReplaceDate =  [self replaceModuleDateWithNowDate:[self getNowDateStr] nowYear:[self getNowYearStr] moduleStr:replacedStr];
+        [[FileManager sharedInstance] createFileAtPath:newWholePath content:stringAfterReplaceDate];
     }
     [[NSWorkspace sharedWorkspace] openFile:filePath];
-
 }
+
+
+
+#pragma mark - ReplaceDate
+- (NSString *)replaceModuleDateWithNowDate:(NSString *)nowDate nowYear:(NSString *)nowYear moduleStr:(NSString *)moduleStr{
+    
+    NSMutableString *searchText = [NSMutableString stringWithFormat:@"%@",moduleStr];
+    NSError *error = NULL;
+    //匹配17/06/25
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[0-9]{1,2}/[0-9]{1,2}/[0-9]{1,2}" options:NSRegularExpressionCaseInsensitive error:&error];
+    //匹配2017年;
+    NSRegularExpression *regexT = [NSRegularExpression regularExpressionWithPattern:@"[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[\u4e00-\u9fa5]" options:NSRegularExpressionCaseInsensitive error:&error];
+    [regex replaceMatchesInString:searchText options:0 range:NSMakeRange(0, searchText.length) withTemplate:nowDate];
+    [regexT replaceMatchesInString:searchText options:0 range:NSMakeRange(0, searchText.length) withTemplate:nowYear];
+    return searchText;
+}
+
+- (NSString *)getNowDateStr{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yy/MM/dd";
+    return [formatter stringFromDate:[NSDate date]];
+}
+
+- (NSString *)getNowYearStr{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy";
+    
+    NSString *nowYear = [NSString stringWithFormat:@"%@年",[formatter stringFromDate:[NSDate date]]];
+    
+    return nowYear;
+}
+
 
 - (void)showAlertWithMessage:(NSString *)message{
     
@@ -202,8 +234,5 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
     [alert setMessageText:message];
     [alert runModal];
 }
-
-#pragma mark - Getter && Setter
-
 
 @end
