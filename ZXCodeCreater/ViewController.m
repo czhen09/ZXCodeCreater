@@ -171,26 +171,29 @@ NSString *const secondClassPrefix = @"secondClassPrefix";
 
 - (void)creatFolderAndFileAtModuleFilePath:(NSString *)filePath
 {
-
     //所有的文件以及文件夹子目录
    NSArray *filePathArr = [[FileManager sharedInstance] getFilePathArrWithPath:filePath];
     for (NSString *subPath in filePathArr) {
         NSString * wholePath = [filePath stringByAppendingPathComponent:subPath];
+        //直接修改路径，然后根据路径新建文件夹及其文件，也就相当于修改文件及其文件夹名称；
         NSString *newWholePath = [wholePath stringByReplacingOccurrencesOfString:self.moduleClassPrefix withString:self.targetClassPrefix];
         //忽略隐藏文件
         if ([subPath containsString:@".DS_Store"]) {
             
             continue;
         }
-        //文件夹路径;如果是文件夹的话，就创建文件夹
+        //文件夹路径;如果是文件夹的话，就创建文件夹(如果后缀是.h或者.m的话，那么就是文件，否则是文件夹)
         if (!([subPath containsString:@".h"]||[subPath containsString:@".m"])) {
         
             [[FileManager sharedInstance] createFolderAtPath:newWholePath];
             continue;
         }
         NSString *str =  [[FileManager sharedInstance] getStringWithContentsOfFilePath:wholePath];
+        //将文件中的字段替换成目标字段
         NSString *replacedStr = [str stringByReplacingOccurrencesOfString:self.moduleClassPrefix withString:self.targetClassPrefix];
+        //修改文件顶部注释的模板文件中的日期；
         NSString *stringAfterReplaceDate =  [self replaceModuleDateWithNowDate:[self getNowDateStr] nowYear:[self getNowYearStr] moduleStr:replacedStr];
+        //创建文件
         [[FileManager sharedInstance] createFileAtPath:newWholePath content:stringAfterReplaceDate];
     }
     [[NSWorkspace sharedWorkspace] openFile:filePath];

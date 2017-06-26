@@ -10,8 +10,12 @@
 
 @interface FileManager : NSObject
 + (FileManager *)sharedInstance;
+/**创建文件夹*/
 - (void)createFolderAtPath:(NSString *)folder;
+/**创建文件*/
 - (void)createFileAtPath:(NSString *)FilePath content:(NSString *)content;
+/**获取文件内容*/
 - (NSString *)getStringWithContentsOfFilePath:(NSString *)filePath;
+/**根据目录遍历文件夹*/
 - (NSArray *)getFilePathArrWithPath:(NSString *)dirPath;
 @end
